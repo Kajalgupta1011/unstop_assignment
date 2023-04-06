@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import BookingSeat, {bookedSeats} from "./util/BookingSeat";
 import ShowSeats from "./ShowSeats";
+import trainLogo from "./images/trainLogo.png";
 
 function App() {
 	const avalSeats = 80 - bookedSeats.length;
@@ -23,6 +24,7 @@ function App() {
 	return (
 		<div className="container">
 			<div className="form">
+				<img src={trainLogo} alt="train_logo" />
 				<h1 className="heading">Online Seat's Booking</h1>
 				<div className="input">
 					<p>Enter number of Seats</p>
