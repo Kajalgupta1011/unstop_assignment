@@ -1,10 +1,11 @@
 * {
   margin: 0;
   padding: 0;
+  background-color: #1B2430;
 }
 
 .container {
-  width: 100%;
+  min-width: 430px;
   background-color: #1B2430;
   display: flex;
   flex-direction: row;
@@ -138,6 +139,12 @@ button:active {
   justify-content: space-evenly;
   /* background-color: aqua; */
   gap: 10px;
+  background: rgba(30, 29, 29, 0.35);
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .seat {
@@ -171,7 +178,7 @@ button:active {
     gap: 40px;
     align-items: center;
     color: white;
-    height: auto
+    height: auto;    
   }
   .form {
     font-size: 18px;
