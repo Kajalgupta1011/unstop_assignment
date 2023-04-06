@@ -170,7 +170,7 @@ button:active {
 
 @media only screen and (max-width: 768px) {
   .container {
-    min-width: 430px;
+    min-width: 360px;
     background-color: #1B2430;
     padding: 30px 0 30px 0;
     display: flex;
