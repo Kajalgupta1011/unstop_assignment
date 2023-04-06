@@ -8,12 +8,18 @@ function ShowSeats() {
 				return (
 					<div className="row" key={"row" + idx}>
 						{row.map((num, idx) => {
-							<div
-								key={"col" + idx}
-								className={`seat ${
-									bookedSeats.includes(num) ? "booked" : "" }`} >
-								{num}
-							</div>;
+							return (
+								<div
+									key={"col" + idx}
+									className={`seat ${
+										bookedSeats.includes(num)
+											? "booked"
+											: ""
+									}`}
+								>
+									{num}
+								</div>
+							);
 						})}
 					</div>
 				);

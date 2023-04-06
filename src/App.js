@@ -10,10 +10,10 @@ function App() {
 
 	function handleSubmit() {
 
-		if (!seats) return setError("Please enter the number of seats !!!");
-		if (seats <= 0) return setError("Seat number can't be 0");
-		if (seats > 7) return setError("Seat number can't be greater than 7");
-		if(avalSeats < seats)	return setError("Value exceeds available seats")
+		if (!seats) return setError("Please enter the number of seats ⚠️");
+		if (seats <= 0) return setError("Seat number can't be 0 ⚠️");
+		if (seats > 7) return setError("Seat number can't be greater than 7 ⚠️");
+		if(avalSeats < seats)	return setError("Value exceeds available seats ⚠️")
 
 		console.log(BookingSeat(Number(seats)));
 
@@ -24,13 +24,15 @@ function App() {
 		<div className="container">
 			<div className="form">
 				<h1 className="heading">Online Seat's Booking</h1>
-				<p>Enter number of Seats</p>
-				<input
-					type="number"
-					value={seats}
-					onChange={(e) => setSeats(e.target.value)}
-					min={0}
-				/>
+				<div className="input">
+					<p>Enter number of Seats</p>
+					<input
+						type="number"
+						value={seats}
+						onChange={(e) => setSeats(e.target.value)}
+						min={0}
+					/>
+				</div>				
 				<small className="error">{error}</small>
 				<p className="show-availSeat">Available Seats : {avalSeats}</p>
 				<button onClick={handleSubmit}>Book Ticket</button>
