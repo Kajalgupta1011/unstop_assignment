@@ -3,13 +3,14 @@
   padding: 0;
 }
 .container{
+  width: 100%;
   background-color: #1B2430;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  /* gap: 40px; */
   color: white;
+  height: 713px
 }
 .form{
   display: flex;
@@ -51,7 +52,7 @@
 .avlSeats{
   width: 40px;
   height: 40px;
-  border-radius: 30%;
+  border-radius: 49% 51% 50% 50% / 31% 29% 71% 69%   ;
   background-color: rgb(72, 211, 93);
   box-shadow: inset 8px 8px 8px rgb(59, 189, 232), 
               inset -8px -8px 8px rgb(8, 64, 83);
@@ -60,7 +61,7 @@
 .bookedSeats{
   width: 40px;
   height: 40px;
-  border-radius: 30%;
+  border-radius: 49% 51% 50% 50% / 31% 29% 71% 69%   ;
   box-shadow: inset 8px 8px 8px rgb(60, 60, 233), 
               inset -8px -8px 8px rgb(2, 2, 101);
   background-color: blue;
@@ -120,7 +121,8 @@ border: 1px solid rgba(255, 255, 255, 1);
   text-align: center;
   padding: 5px;
   /* background-color: rgb(212, 136, 20); */
-  border-radius: 10px;
+  /* border-radius: 10px; */
+  border-radius: 49% 51% 50% 50% / 31% 29% 71% 69%   ;
   padding: 5px;
   width: 25px;
   height: 25px;
