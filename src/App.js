@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
-import BookingSeat, {bookedSeats} from "./BookingSeat";
+import BookingSeat, {bookedSeats} from "./util/BookingSeat";
+import ShowSeats from "./ShowSeats";
 
 function App() {
 	const avalSeats = 80 - bookedSeats.length;
@@ -41,7 +42,8 @@ function App() {
 				</div>
 			</div>
 			<div className="showSeats">
-
+				<h1>Seats</h1>
+				<ShowSeats/>
 			</div>
 		</div>
 	);
